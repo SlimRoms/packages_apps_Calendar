@@ -23,7 +23,6 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -73,7 +72,6 @@ public class OtherPreferences extends PreferenceFragment  implements OnPreferenc
 
     private Preference mCopyDb;
     private ListPreference mSkipReminders;
-    private CheckBoxPreference mQuietHours;
     private Preference mQuietHoursStart;
     private Preference mQuietHoursEnd;
 
@@ -109,9 +107,6 @@ public class OtherPreferences extends PreferenceFragment  implements OnPreferenc
             Log.d(TAG, "Activity was null");
         }
         mIs24HourMode = DateFormat.is24HourFormat(activity);
-
-        mQuietHours =
-                (CheckBoxPreference) findPreference(KEY_OTHER_QUIET_HOURS);
 
         int startHour = prefs.getInt(KEY_OTHER_QUIET_HOURS_START_HOUR,
                 QUIET_HOURS_DEFAULT_START_HOUR);
