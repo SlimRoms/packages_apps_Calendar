@@ -208,6 +208,8 @@
     <string name="creating_event_with_guest">"Invitations will be sent."</string>
     <!-- Toast message displayed when an existing event with guests is saved after being modified -->
     <string name="saving_event_with_guest">"Updates will be sent."</string>
+    <!-- Toast message displayed when ics file to share an event can't be generated -->
+    <string name="error_generating_ics">"Problems encountered while sharing event"</string>
 
     <!-- Toast message displayed responding to an event from an email as accepted
      [CHAR LIMIT=50] -->
@@ -389,6 +391,7 @@
     <!-- This is a menu button for switching into edit mode when viewing an event.
         [CHAR LIMIT=10] -->
     <string name="edit_label">"Edit"</string>
+    <string name="share_label">"Share"</string>
     <!-- The button label for deleting an event -->
     <string name="delete_label">"Delete"</string>
     <!-- A menu item for deleting an event -->
@@ -519,7 +522,7 @@
     <!-- Title of popup for week start day setting-->
     <string name="preferences_week_start_day_dialog">Week starts on</string>
     <!-- DO NOT TRANSLATE -->
-    <string name="preferences_week_start_day_default">-1</string>
+    <string name="preferences_week_start_day_default" translatable="false">-1</string>
     <!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
     <string name="preferences_clear_search_history_title">Clear search history</string>
     <!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
@@ -550,7 +553,7 @@
     <!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
     <string name="preferences_home_tz_title">Home time zone</string>
     <!-- DO NOT TRANSLATE -->
-    <string name="preferences_home_tz_default">America/Los_Angeles</string>
+    <string name="preferences_home_tz_default" translatable="false">America/Los_Angeles</string>
 
     <!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
     <string name="preferences_show_week_num_title">Show week number</string>
@@ -585,7 +588,7 @@
 
 
     <!-- DO NOT TRANSLATE -->
-    <string name="tardis">TARDIS</string>
+    <string name="tardis" translatable="false">TARDIS</string>
 
     <!-- Experimental settings [CHAR LIMIT = 30]-->
     <string name="preferences_experimental_category">Experimental</string>
@@ -749,5 +752,22 @@
     <string name="acessibility_recurrence_choose_end_date_description">change end date</string>
 
     <!-- Do Not Translate.  Sender identity for global notification synchronization. -->
-    <string name="notification_sender_id"></string>
+    <string name="notification_sender_id" translatable="false"></string>
+
+    <!-- Delete Events related -->
+    <string name="events_delete">Delete events</string>
+    <string name="action_select_all">Select all</string>
+    <string name="action_select_none">Deselect all</string>
+    <string name="action_delete">Done</string>
+    <string name="all_events">All events</string>
+    <string name="no_events">No events available</string>
+    <string name="selected">selected</string>
+    <string name="evt_del_dlg_title">Delete Events?</string>
+    <string name="evt_del_dlg_msg_selected">Selected events will be deleted</string>
+    <string name="evt_del_dlg_msg_all">All events will be deleted</string>
+    <string name="no_events_selected">No events selected</string>
+
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to go to the calendars to display [CHAR LIMIT=20] -->
+    <string name="go_to">Go to</string>
 </resources>
